@@ -76,11 +76,15 @@
   background: #F6F6F6;
   padding: 70px 0;
 }
-.privilege__heading {
-  color: #000;
-  font-size: 30px;
-  font-weight: 700;
-  margin-bottom: 60px;
+.privilege__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 60px;
 }
 .privilege__info {
   display: -webkit-box;
@@ -102,6 +106,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 270px;
   gap: 20px;
 }
 .privilege__info .privilege__item img {
@@ -116,6 +121,11 @@
   font-size: 14px;
   font-weight: 300;
   text-align: center;
+}
+.privilege__info .privilege__item p a {
+  color: #c70101;
+  text-decoration: underline;
+  font-family: "MuseoModerno", sans-serif;
 }
 
 .header {
@@ -153,6 +163,8 @@
 .header__info span {
   display: block;
   font-size: 18px;
+  font-weight: 500;
+  font-family: "MuseoModerno", sans-serif;
 }
 .header__contacts {
   display: -webkit-box;
@@ -188,10 +200,61 @@
   text-transform: uppercase;
   border: none;
 }
+.button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 .button_main {
   width: 300px;
   height: 50px;
   font-size: 16px;
+}
+
+.consultation {
+  height: 680px;
+  background: url(../../img/bacgraund/bacgraund-form.png) center center/cover no-repeat;
+  padding: 100px 0;
+}
+.consultation__heading {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.consultation__descr {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #fff;
+  margin-bottom: 35px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.form input {
+  width: 300px;
+  height: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.form input:hover, .form input:focus {
+  border: #c70101 solid 2px;
+}
+.form button {
+  margin: 5px 0;
 }
 
 * {
@@ -201,4 +264,13 @@
 .container {
   max-width: 950px;
   margin: 0 auto;
+}
+
+h2 {
+  display: block;
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
 }

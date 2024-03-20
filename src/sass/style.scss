@@ -3,6 +3,8 @@
 @import "blocks/privilege";
 @import "blocks/header";
 @import "blocks/botton";
+@import "blocks/consultation";
+@import "blocks/forms.scss";
 
 * {
     font-family: 'Museo Sans', sans-serif;
@@ -11,4 +13,13 @@
 .container {
     max-width: 950px;
     margin: 0 auto;
+}
+
+h2 {
+    display: block;
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
 }

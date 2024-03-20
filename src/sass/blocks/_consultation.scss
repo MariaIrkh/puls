@@ -1,0 +1,19 @@
+.consultation{
+    height: 680px;
+    background: url(../../img/bacgraund/bacgraund-form.png) center (center/cover) no-repeat;
+    padding: 100px 0;
+    &__heading {
+        font-size: 36px;
+        font-weight: 700;
+        text-align: left;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    &__descr {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        color: #fff;
+        margin-bottom: 35px;
+    }
+}
