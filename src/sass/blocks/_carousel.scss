@@ -3,7 +3,10 @@
     &__inner {
         position: relative;
         margin: 0 auto;
-        width: 750px;
+        width: 90%;
+        img {
+            width: 100%;
+        }
     }
     .slick-prev, .slick-next {
         position: absolute;

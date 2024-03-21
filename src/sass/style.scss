@@ -15,12 +15,14 @@ h2 {
     text-align: center;
     text-transform: uppercase;
 }
-@import "blocks/carousel";
+
 @import "base/variables";
+@import "blocks/header";
+@import "blocks/button";
+@import "blocks/catalog";
+@import "blocks/carousel";
 @import "blocks/promo";
 @import "blocks/privilege";
-@import "blocks/header";
-@import "blocks/botton";
 @import "blocks/consultation";
 @import "blocks/forms.scss";
 @import "base/media";

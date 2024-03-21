@@ -16,13 +16,234 @@ h2 {
   text-transform: uppercase;
 }
 
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo {
+  width: 250px;
+}
+.header__logo img {
+  width: 100%;
+}
+.header__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+}
+.header__info span {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "MuseoModerno", sans-serif;
+}
+.header__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+.header__phone {
+  display: block;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+}
+.header__phone:hover {
+  color: #fff;
+}
+
+.button {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #c70101;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+}
+.button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.button_main {
+  width: 300px;
+  height: 50px;
+  font-size: 16px;
+}
+.button_card {
+  width: 135px;
+  height: 40px;
+  font-size: 14px;
+}
+
+.catalog {
+  padding-bottom: 80px;
+}
+.catalog__tabs {
+  margin: 50px auto;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  list-style-type: none;
+}
+.catalog__tab {
+  width: 180px;
+  height: 50px;
+  border: #D0D0D0 solid 2px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #6B6B6B;
+  text-align: center;
+  line-height: 48px;
+  border-radius: 5px;
+  -webkit-transform: skewX(-25deg);
+          transform: skewX(-25deg);
+  cursor: pointer;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.catalog__tab:hover {
+  -webkit-box-shadow: 3px 3px 20px #c70101;
+          box-shadow: 3px 3px 20px #c70101;
+  border: none;
+}
+.catalog__tab div {
+  -webkit-transform: skewX(25deg);
+          transform: skewX(25deg);
+}
+.catalog__tab_active {
+  color: #fff;
+  background-color: #c70101;
+  border: none;
+}
+.catalog .card {
+  width: 305px;
+  height: 440px;
+  padding: 20px;
+  border: #E8E8E8 solid 2px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.catalog .card img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 200px;
+}
+.catalog .card__title {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #0D0D0D;
+}
+.catalog .card__descr {
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  color: #0D0D0D;
+}
+.catalog .card__link {
+  color: #c70101;
+  text-decoration: underline;
+  font-family: "MuseoModerno", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.catalog .card__link:hover {
+  color: #0D0D0D;
+  text-decoration: none;
+}
+.catalog .card hr {
+  width: 100%;
+  height: 2px;
+  color: #e8e8e8;
+  margin: 17px;
+  opacity: 1;
+}
+.catalog .card__footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  gap: 12px;
+}
+.catalog .card__footer .card__old-price {
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: line-through;
+  color: #555;
+}
+.catalog .card__footer .card__new-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #050505;
+}
+
 .carousel {
   padding: 80px 0;
 }
 .carousel__inner {
   position: relative;
   margin: 0 auto;
-  width: 750px;
+  width: 90%;
+}
+.carousel__inner img {
+  width: 100%;
 }
 .carousel .slick-prev, .carousel .slick-next {
   position: absolute;
@@ -113,6 +334,10 @@ h2 {
   font-weight: 500;
   text-transform: uppercase;
 }
+.promo__link a:hover {
+  color: #c70101;
+  text-decoration: none;
+}
 
 .privilege {
   background: #F6F6F6;
@@ -168,90 +393,6 @@ h2 {
   color: #c70101;
   text-decoration: underline;
   font-family: "MuseoModerno", sans-serif;
-}
-
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.header__logo {
-  width: 250px;
-}
-.header__logo img {
-  width: 100%;
-}
-.header__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #fff;
-  font-weight: 500;
-  font-size: 12px;
-}
-.header__info span {
-  display: block;
-  font-size: 18px;
-  font-weight: 500;
-  font-family: "MuseoModerno", sans-serif;
-}
-.header__contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-}
-.header__phone {
-  display: block;
-  color: #fff;
-  font-weight: 700;
-  font-size: 18px;
-  text-decoration: none;
-}
-.header__phone:hover {
-  color: #fff;
-}
-
-.button {
-  width: 150px;
-  height: 30px;
-  border-radius: 5px;
-  background-color: #c70101;
-  font-size: 12px;
-  font-weight: 500;
-  color: #fff;
-  text-transform: uppercase;
-  border: none;
-}
-.button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.button_main {
-  width: 300px;
-  height: 50px;
-  font-size: 16px;
 }
 
 .consultation {
