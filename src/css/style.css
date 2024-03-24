@@ -153,14 +153,50 @@ h2 {
   background-color: #c70101;
   border: none;
 }
-.catalog .card {
-  width: 305px;
-  height: 440px;
-  padding: 20px;
-  border: #E8E8E8 solid 2px;
-  border-radius: 5px;
+.catalog .catalog__content {
+  display: none;
+}
+.catalog .catalog__content_activ {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+.catalog .catalog__content .catalog__card {
+  width: 300px;
+  height: 440px;
+  border: #E8E8E8 solid 2px;
+  border-radius: 5px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+}
+.catalog .catalog__content .catalog__card .catalog__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(200% + 40px);
+}
+.catalog .catalog__content .catalog__card .catalog__wrapper .catalog__front {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 14px;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -173,44 +209,61 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
 }
-.catalog .card img {
+.catalog .catalog__content .catalog__card .catalog__wrapper .catalog__front img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
-  height: 200px;
+  height: 150px;
 }
-.catalog .card__title {
+.catalog .catalog__content .catalog__card .catalog__wrapper .catalog__front .catalog__title {
   font-weight: 700;
   font-size: 16px;
   text-align: center;
   color: #0D0D0D;
 }
-.catalog .card__descr {
+.catalog .catalog__content .catalog__card .catalog__wrapper .catalog__front .catalog__descr {
   font-weight: 300;
   font-size: 14px;
   text-align: center;
   color: #0D0D0D;
 }
-.catalog .card__link {
+.catalog .catalog__content .catalog__card .catalog__wrapper .catalog__back {
+  width: 50%;
+  max-height: 320px;
+  margin-bottom: 0;
+  padding: 20px;
+  list-style-image: url(../icon/rb.png);
+  position: relative;
+}
+.catalog .catalog__content .catalog__card .catalog__wrapper .catalog__back li {
+  font-size: 14px;
+  font-weight: 300;
+  color: #555;
+}
+.catalog .catalog__content .catalog__card .catalog__wrapper .catalog__link {
   color: #c70101;
   text-decoration: underline;
   font-family: "MuseoModerno", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
 }
-.catalog .card__link:hover {
+.catalog .catalog__content .catalog__card .catalog__wrapper .catalog__link:hover {
   color: #0D0D0D;
   text-decoration: none;
 }
-.catalog .card hr {
+.catalog .catalog__content .catalog__card .catalog__wrapper .catalog__link_back {
+  position: absolute;
+  left: 40%;
+  bottom: 0;
+}
+.catalog .catalog__content .catalog__card hr {
   width: 100%;
   height: 2px;
   color: #e8e8e8;
-  margin: 17px;
+  margin: 10px;
   opacity: 1;
 }
-.catalog .card__footer {
-  width: 100%;
+.catalog .catalog__content .catalog__card .catalog__footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,13 +275,13 @@ h2 {
           align-items: end;
   gap: 12px;
 }
-.catalog .card__footer .card__old-price {
+.catalog .catalog__content .catalog__card .catalog__footer .catalog__old-price {
   font-size: 14px;
   font-weight: 300;
   text-decoration: line-through;
   color: #555;
 }
-.catalog .card__footer .card__new-price {
+.catalog .catalog__content .catalog__card .catalog__footer .catalog__new-price {
   font-size: 20px;
   font-weight: 700;
   color: #050505;
