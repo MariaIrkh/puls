@@ -17,12 +17,15 @@ h2 {
 }
 
 @import "base/variables";
+@import "blocks/pageup";
 @import "blocks/header";
+@import "blocks/footer";
 @import "blocks/button";
 @import "blocks/catalog";
 @import "blocks/carousel";
 @import "blocks/promo";
 @import "blocks/privilege";
 @import "blocks/consultation";
-@import "blocks/forms.scss";
+@import "blocks/forms";
+@import "blocks/modal";
 @import "base/media";

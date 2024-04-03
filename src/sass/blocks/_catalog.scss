@@ -56,16 +56,21 @@
             .catalog__wrapper {
                 display: flex;
                 width: calc(200% + 40px);
-                // overflow: hidden;
                 .catalog__front {
                     width: 50%;
-                    // margin-right: 20px;
+                    margin-right: 0px;
+                    transform: translateX(-100%);
+                    transition: 0.5s all;
                     display: flex;
                     gap: 14px;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
                     align-items: center;
+                    &_active {
+                        transform: translateX(0);
+                        margin-right: 20px;
+                    }
                     img {
                         display: block;
                         margin: 0 auto;
@@ -87,19 +92,23 @@
                 }
                 .catalog__back {
                     width: 50%;
+                    margin-left: 20px;
+                    transform: translateX(0%);
+                    transition: 0.5s all;
                     max-height: 320px;
-                    // margin-left: 20px;
-                    margin-bottom: 0;
                     padding: 20px;
                     list-style-image: url(../icon/rb.png);
-                    position: relative;
+                    &_active {
+                        transform: translateX(-100%);
+                        margin-left: 0px;
+                    }
                     li {
                         font-size: 14px;
                         font-weight: 300;
                         color: #555;
                     }
                 }
-                .catalog__link {
+                .catalog__link_front {
                     color: $main-color;
                     text-decoration: underline;
                     font-family: "MuseoModerno", sans-serif;
@@ -115,6 +124,11 @@
                     position: absolute;
                     left: 40%;
                     bottom: 0;
+                    color: $main-color;
+                    text-decoration: underline;
+                    font-family: "MuseoModerno", sans-serif;
+                    text-transform: uppercase;
+                    font-size: 14px;
                 }
             }
             hr {
